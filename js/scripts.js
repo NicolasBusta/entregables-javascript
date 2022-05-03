@@ -1,6 +1,6 @@
 
 //verificador de edad:
-
+/*
 let edad = prompt("¿que edad tienes?");
 
     if(edad >=18){
@@ -12,7 +12,7 @@ let edad = prompt("¿que edad tienes?");
             edad = prompt("¿que edad tienes?");
         }
     }
-
+*/
 //objetos(cervezas):
 /*
 class Cerveza{
@@ -40,6 +40,9 @@ const CervezaTrigo = new Cerveza("weissen", "rubia", 20);
 
 const Cervezas =[CervezaGoldenAle, CervezasPaleAle,CervezaOktoberfest];
 */
+
+// liosta desplegable de opciones:
+/*
 let tiposCerveza =["rubias", "rojas", "negras"];
 
 let SeleccionarCerveza = document.getElementById("birras");
@@ -52,14 +55,18 @@ option.value = numero;
 SeleccionarCerveza.append(option);
 
 });
+*/
 
-/*
+
+
+/* recorredor de arrays
 for (let i = 0; i < Cervezas.length; i++) {
     console.log(Cervezas[i]);
 }
 */
-//Strings al azar cpor medio de un boton
 
+//Strings al azar cpor medio de un boton
+/*
 function RandomSugerencia(array) {
     return array[Math.floor(Math.random() * array.length)];
   }
@@ -78,4 +85,25 @@ function RandomSugerencia(array) {
     document.getElementById("recomendacionBottom").onclick = function(){
         cambiar();
     }
+*/
+//eventos:
+let detalleRubia ="refrescant, ligera equilibrada";
+let detalleRoja="dulce, maltosa y caramelosa";
+let detalleNegra="fuerte, tostada, sabor a cafe o chocolate";
+
+let contenedor = document.getElementById("contenedor");
+let boton = document.getElementById('bot1');
+
+let boton2 = document.getElementById('bot2');
+let boton3 = document.getElementById('bot3');
+
+
+boton.addEventListener("click",()=>{
+
+    let detalle1= detalleRubia;
+    let parrafo = document.createElement("p");
+    parrafo.innerHTML = detalle1;
+    contenedor.append(parrafo);
+});
+
 

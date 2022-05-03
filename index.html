@@ -15,7 +15,7 @@
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning bg-gradient">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#!">Cerveceria el Nogal</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -268,12 +268,38 @@
             </div>
             </div>
         </section>
+
         <section>
-            <select class="mb-5 text-center" id="birras">
-                <div >
-                <option value="valor">Tipos de Cerveza</option>
+
+            <div class="container">
+                <div class="row  row-cols-2 row-cols-md-2 row-cols-xl-4">
+                  <div class="col mb-2 text-center">
+                    <!-- lista desplegable
+                        <option value="valor">Tipos de Cerveza</option>
+                    <select class="mb-5 text-center" id="birras"></select>
+                    -->
+                    <button type="button" id="bot1" class="btn bg-warning bg-gradient">Rubia</button>
+
+                    <button type="button"  id="bot2" class="btn btn-dange bg-danger bg-gradientr text-light">Roja</button>
+
+                    <button type="button" id="bot3" class="btn bg-dark bg-gradient text-light">Negra</button>
+
+                    <div >
+                    </div>
+                  </div>
+                  <div class="col">
+                    <p class="fs-3 text-dark lead fw-normal mb-0 bg-warning bg-gradient text-center">Detalles:</p>
+                    <div class="card">
+                        <div id="contenedor" class="card-body  text-black">
+                            
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            
+
             </div>
-            </select>
+            
 
         </section>
         <!-- Footer-->
