@@ -15,6 +15,7 @@ let edad = prompt("¿que edad tienes?");
 */
 //objetos(cervezas):
 
+
 class Cerveza{
    
     constructor( nombre, color, ibu) {
@@ -145,3 +146,15 @@ const guardarLocalmente =(clave,valor)=>{
 for (const producto of Cervezas){
     guardarLocalmente(producto.nombre, JSON.stringify(producto));
 }
+//spread de objetos mostrando inventario:
+const productosCervezas={
+    ...Cervezas,
+};
+console.log(Cervezas);
+
+function mostrarInventario(...array) {
+    console.log(array);
+    
+}
+
+mostrarInventario("rubia","ipa","porter","roja","sour","stoun");
