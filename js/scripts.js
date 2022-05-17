@@ -1,18 +1,23 @@
 
 //verificador de edad:
-/*
-let edad = prompt("¿que edad tienes?");
-
-    if(edad >=18){
-        alert("Bienvenido");
-
-    } else{
-        while (edad <18){
-            alert("los sientimos, pero debes ser mayor de edad!");
-            edad = prompt("¿que edad tienes?");
-        }
+Swal.fire({
+    title: '<strong>¿Eres mayor de edad?</strong>',
+    confirmButtonColor: '#FFC900',
+    cancelButtonColor: 'black',
+    icon: 'question',
+    showCloseButton: true,
+    showCancelButton: true,
+    focusConfirm: false,
+    reverseButtons: true,
+    focusCancel: true,
+    cancelButtonText:`SI`,
+    confirmButtonText: '<a href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/40000-44999/42480/norma.htm">NO</a>'
+  }).then((result) => {
+    if (result.value) {
+      window.location.href = ``
     }
-*/
+  }); 
+
 //objetos(cervezas):
 
 
@@ -158,3 +163,5 @@ function mostrarInventario(...array) {
 }
 
 mostrarInventario("rubia","ipa","porter","roja","sour","stoun");
+
+
