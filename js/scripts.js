@@ -164,4 +164,10 @@ function mostrarInventario(...array) {
 
 mostrarInventario("rubia","ipa","porter","roja","sour","stoun");
 
-
+//fetch
+fetch("js/cervezas.json")
+.then((Response)=>{
+    return Response.json();
+}).then((cervezas)=>{
+    console.log(cervezas);
+})
